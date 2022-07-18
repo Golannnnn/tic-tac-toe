@@ -1,0 +1,133 @@
+*,
+*:before,
+*:after { 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 25px 0px;
+}
+
+header:first-child {
+    font-size: 40px;
+}
+
+header p:nth-child(2) {
+    margin: 20px 10px 10px 10px;
+    height: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(245, 62, 62);
+}
+
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#player-1:hover,
+#player-2:hover {
+    opacity: 0.5;
+}
+
+#player-1, 
+#player-2,
+#score-1,
+#score-2 {
+    width: 150px;
+    height: 30px;
+}
+
+#empty-space,
+#seperator {
+    width: 10px;
+} 
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 15px 20px 40px 20px;
+}
+
+#board {
+    display: grid;
+    grid: repeat(3, minmax(90px, 1fr)) / repeat(3, minmax(90px, 1fr));
+    justify-content: center;
+}
+
+.cell {
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zero,
+.one,
+.two {
+    border-top: 2px solid black;
+}
+
+.zero,
+.three,
+.six {
+    border-left: 2px solid black;
+}
+
+.two,
+.five,
+.eight {
+    border-right: 2px solid black;
+}
+
+.six,
+.seven,
+.eight {
+    border-bottom: 2px solid black;
+}
+
+#display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons > button {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+    button:hover {
+    border: 1px solid rgb(245, 62, 62);
+    background-color: rgb(245, 62, 62);
+    color: white;
+}
+
+#reset-game {
+    margin-right: 15px;
+}
+
+#reset-score {
+    margin-left: 15px;
+}

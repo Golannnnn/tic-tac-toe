@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <p>Tic tac toe</p>
+        <p id="message"></p>
+    </header>
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <th id="player-1">Player 1</th>
+                <th id="empty-space"></th>
+                <th id="player-2">Player 2</th>
+            </tr>
+            <tr>
+                <th id="score-1">0</th>
+                <th id="seperator">:</th>
+                <th id="score-2">0</th>
+            </tr>
+        </table>
+    </div>
+    <main>
+        <div id="board">
+            <div class="cell zero"></div>
+            <div class="cell one"></div>
+            <div class="cell two"></div>
+            <div class="cell three"></div>
+            <div class="cell four"></div>
+            <div class="cell five"></div>
+            <div class="cell six"></div>
+            <div class="cell seven"></div>
+            <div class="cell eight"></div>
+        </div>
+    </main>
+    <section id="display">
+        <div class="buttons">
+            <button id="reset-game">Start new game</button>
+            <button id="reset-score">Reset all rounds</button>
+        </div>
+    </section>
+    <script defer src="script.js"></script>
+</body>
+</html>
